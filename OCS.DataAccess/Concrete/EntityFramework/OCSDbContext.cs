@@ -13,6 +13,11 @@ namespace OCS.DataAccess.Concrete.EntityFramework
         public DbSet<Order> Orders { get; set; }
         #endregion
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(OCSDbContext).Assembly);
