@@ -36,6 +36,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//basit seviyede hata yönetimi sağladım.
+//middleware yazılarak daha detaylı hata yönetimi yapılabilir.
+app.UseExceptionHandler("/error");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
