@@ -9,3 +9,5 @@
 /OCS.Entities/bin
 OCS.API/OCS.API.csproj.user
 OCS.API/OCS.API.csproj.user
+/OCS.Common/bin
+/OCS.DataAccess/bin
