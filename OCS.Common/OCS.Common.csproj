@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="DTOs\.Profiles\DistrictProfile.cs" />
+    <Compile Include="DTOs\.Profiles\CustomerProfile.cs" />
+    <Compile Include="DTOs\.Profiles\OrderProfile.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OCS.Entities\OCS.Entities.csproj" />
   </ItemGroup>
 
