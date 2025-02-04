@@ -1,2 +1,11 @@
 /.vs
 /OCS.API/obj
+/OCS.Business/obj
+/OCS.Common/obj
+/OCS.DataAccess/obj
+/OCS.Entities/obj
+/OCS.API/bin
+/OCS.Business/bin
+/OCS.Entities/bin
+OCS.API/OCS.API.csproj.user
+OCS.API/OCS.API.csproj.user
