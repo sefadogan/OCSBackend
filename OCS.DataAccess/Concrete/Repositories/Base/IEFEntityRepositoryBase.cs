@@ -10,6 +10,7 @@ namespace OCS.DataAccess.Concrete.Repositories.Base
         DbContext GetCurrentContext();
         DbSet<TEntity> GetEntity();
         IQueryable<TEntity> Queryable(bool ignoreGlobalFilters = false);
+        Task<TEntity> GetById(TKey id);
         Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> expression);
     }
 }

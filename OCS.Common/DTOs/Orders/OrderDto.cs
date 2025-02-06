@@ -1,6 +1,4 @@
-﻿using static OCS.Entities.Constants.OrderConstants;
-
-namespace OCS.Common.DTOs.Orders
+﻿namespace OCS.Common.DTOs.Orders
 {
     public class OrderDto
     {
@@ -8,7 +6,7 @@ namespace OCS.Common.DTOs.Orders
         public int OrderNo { get; set; }
         public string OrderTrackingNo { get; set; }
         public string ShipmentTrackingNo { get; set; }
-        public OrderStatus Status { get; set; }
+        public int Status { get; set; } //OrderStatus
         public bool ReleasedForDistribution { get; set; }
         public DateTime CreatedDate { get; set; }
 

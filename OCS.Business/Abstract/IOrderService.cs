@@ -9,5 +9,6 @@ namespace OCS.Business.Abstract
     public interface IOrderService
     {
         Task<IDataResult<IEnumerable>> GetOrdersAsync(PaginationFilter paginationFilter, ODataQueryOptions<OrderDto> queryOptions);
+        Task<IDataResult<OrderDto>> GetOrderByIdAsync(int id);
     }
 }

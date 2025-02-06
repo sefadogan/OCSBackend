@@ -22,5 +22,11 @@ namespace OCS.API.Controllers
         {
             return GetResponseOnlyResultData(await _orderService.GetOrdersAsync(paginationFilter, queryOptions));
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return GetResponseOnlyResultData(await _orderService.GetOrderByIdAsync(id));
+        }
     }
 }
