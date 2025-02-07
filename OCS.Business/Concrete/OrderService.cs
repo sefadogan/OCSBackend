@@ -9,7 +9,6 @@ using OCS.Common.Pagination;
 using OCS.Common.Result.Abstract;
 using OCS.Common.Result.Concrete;
 using OCS.DataAccess.Abstract;
-using OCS.Entities.Concrete;
 using System.Collections;
 
 namespace OCS.Business.Concrete
