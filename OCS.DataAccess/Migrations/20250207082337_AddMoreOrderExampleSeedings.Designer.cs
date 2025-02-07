@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OCS.DataAccess.Concrete.EntityFramework;
 
@@ -11,9 +12,11 @@ using OCS.DataAccess.Concrete.EntityFramework;
 namespace OCS.DataAccess.Migrations
 {
     [DbContext(typeof(OCSDbContext))]
-    partial class OCSDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250207082337_AddMoreOrderExampleSeedings")]
+    partial class AddMoreOrderExampleSeedings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

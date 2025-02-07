@@ -3,7 +3,6 @@
     public class OrderDto
     {
         public long Id { get; set; }
-        public int OrderNo { get; set; }
         public string OrderTrackingNo { get; set; }
         public string ShipmentTrackingNo { get; set; }
         public int Status { get; set; } //OrderStatus
